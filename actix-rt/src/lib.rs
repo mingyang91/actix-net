@@ -72,6 +72,7 @@ pub use self::{
     system::{System, SystemRunner},
 };
 
+#[cfg(feature = "signal")]
 pub mod signal {
     //! Asynchronous signal handling (Tokio re-exports).
 
@@ -83,6 +84,7 @@ pub mod signal {
     pub use tokio::signal::ctrl_c;
 }
 
+#[cfg(feature = "net")]
 pub mod net {
     //! TCP/UDP/Unix bindings (mostly Tokio re-exports).
 
