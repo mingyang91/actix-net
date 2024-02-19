@@ -32,7 +32,7 @@ signal = ["tokio/signal"]
 actix-macros = { version = "0.2.3", optional = true }
 
 futures-core = { version = "0.3", default-features = false }
-tokio = { version = "1.36.0", features = ["rt", "sync", "time"] }
+tokio = { git = "https://github.com/mingyang91/tokio.git", features = ["rt", "sync", "time"] }
 
 # runtime for `io-uring` feature
 [target.'cfg(target_os = "linux")'.dependencies]
