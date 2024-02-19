@@ -39,4 +39,4 @@ tokio = { git = "https://github.com/mingyang91/tokio.git", features = ["rt", "sy
 tokio-uring = { version = "0.4", optional = true }
 
 [dev-dependencies]
-tokio = { version = "1.36.0", features = ["full"] }
+tokio = {  git = "https://github.com/mingyang91/tokio.git", features = ["full"] }
